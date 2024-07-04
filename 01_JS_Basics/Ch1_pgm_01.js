@@ -1,6 +1,6 @@
 // Using console.log to display information
 
-console.log("Hello World!");
+console.log("your program");
 console.log("my program");
 
 
