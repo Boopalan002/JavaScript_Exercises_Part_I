@@ -36,8 +36,8 @@ getPlayerInfo = function (playerName, playerPlace, playerHealth) {
 };
 
 console.log(getPlayerInfo("Kandra", "The Dungeon of Doom", 50));
-
-
+console.log(getPlayerInfo("Daniel", "The Bath", 40));
+//in console if we call getPlayerInfo() without arguments then it returns undefined.
 
 
 /* Further Adventures

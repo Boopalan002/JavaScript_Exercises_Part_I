@@ -25,7 +25,30 @@ planet2 = buildPlanet("Neptune", 8, "Ice Giant", 24622, 4);
 console.log(getPlanetInfo(planet1));
 console.log(getPlanetInfo(planet2));
 
+// For cars
+var buildCar;
+var getCarInfo;
+var car1;
+var car2;
 
+buildCar = function (name, type, kilometer, country) {
+    return {
+        name: name,
+        type: type,
+        kilometer:kilometer,
+        country:country
+    };
+};
+
+getCarInfo = function (car) {
+    return car.name.toUpperCase() + ": car " + car.type;
+};
+
+car1 = buildCar("VolksWagon", "Taigun", 140, "USA");
+car2 = buildCar("Tata", "Harrier", 170, "India");
+
+console.log(getCarInfo(car1));
+console.log(getCarInfo(car2));
 
 /* Further Adventures
  *

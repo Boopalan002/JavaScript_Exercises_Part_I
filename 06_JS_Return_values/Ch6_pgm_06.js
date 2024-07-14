@@ -21,6 +21,11 @@ totalCost = function (callOutCharge, costPerHour, numberOfHours) {
     return callOutCharge + costPerHour * numberOfHours;
 };
 
+// it run the function in the console and we get the correct output
+//getHelloTo("Arwen");
+//sum(5, 10);
+//totalCost(30, 40, 3);
+
 
 
 /* Further Adventures

@@ -3,6 +3,11 @@
 var score;
 score = 100;
 console.log(score);
+score = 1004
+console.log(score);
+var score2;
+score2 = 190;
+console.log(score2);
 
 
 
