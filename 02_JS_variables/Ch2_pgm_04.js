@@ -7,8 +7,11 @@ console.log(score);
 score = 150;
 console.log(score);
 
-
-
+var score2;
+score2 = 190;
+console.log(score2);
+score2 = 277;
+console.log(score2);
 /* Further Adventures
  *
  * 1) Change the value assigned to score.

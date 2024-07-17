@@ -2,6 +2,11 @@
 
 var score;
 score = 100;
+console.log(score); 
+score=200;
+console.log(score);
+score=300;
+console.log(score);
 
 /* Further Adventures
  *
@@ -17,7 +22,7 @@ score = 100;
  * 3) Type the word score to match your variable name
  *    and press enter.
  *    100, the value assigned to score, should be displayed.
- *
+ *  
  * 4) Change the value of score in the code above.
  *    Repeat steps 1, 2 and 3.
  *

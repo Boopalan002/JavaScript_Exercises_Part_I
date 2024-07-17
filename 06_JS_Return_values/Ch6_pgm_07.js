@@ -1,12 +1,15 @@
 // Getting a string for a player’s name
 
-var getPlayerName;
-
-getPlayerName = function (playerName) {
-    return playerName;
+var getPlayerName = function (playerName) {
+    var prefixSuffix = "====";
+    var border = "|";
+    return prefixSuffix + " " + playerName + " " + prefixSuffix + "\n" + border + "\n" + border + " " + playerName + "\n" + border;
 };
 
-console.log(getPlayerName("Kandra"));
+console.log(getPlayerName("Kandra")); 
+console.log(getPlayerName("Kiki")); 
+console.log(getPlayerName("Mahesha")); 
+console.log(getPlayerName("Jahver")); 
 
 
 

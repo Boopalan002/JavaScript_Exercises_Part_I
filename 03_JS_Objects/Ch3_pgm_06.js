@@ -1,6 +1,7 @@
 // Using a variable as a property value
 
 var book;
+var book;
 var bookName;
 
 bookName = "The Adventures of Tom Sawyer";
@@ -9,6 +10,12 @@ book = {
     title : bookName
 };
 
+// Changing the value for bookName
+bookName = "Victory City";
+
+book = {
+    title : bookName
+};
 
 
 /* Further Adventures

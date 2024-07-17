@@ -10,6 +10,14 @@ movie1 = {
     directors: "Pete Doctor, Ronaldo Del Carmen"
 };
 
+var movie2 = {
+    title: "Spectre",
+    actors: "Daniel Craig, Christoph Waltz",
+    directors: "Sam Mendes"
+
+};
+
+
 showMovieInfo = function () {
   console.log("Movie information for " + movie.title);
   console.log("------------------------------");
@@ -19,8 +27,11 @@ showMovieInfo = function () {
 };
 
 movie = movie1;
+movie = movie2;
 
 showMovieInfo();
+
+//After assigning values for movie 2 values it shows the values of movie 2 values in the showMovieInfo() function
 
 
 
