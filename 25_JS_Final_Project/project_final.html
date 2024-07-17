@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries Animation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<script>
+const countryData = {
+    name: "Country Name",
+    capital: "Capital City",
+    population: "Population",
+    region: "Region",
+    subregion: "Subregion",
+    language: "Language"
+}
+function changeCountryInfo() {
+    document.getElementById('capital').textContent = countryData.capital;
+    document.getElementById('population').textContent = countryData.population;
+    document.getElementById('region').textContent = countryData.region;
+    document.getElementById('subregion').textContent = countryData.subregion;
+    document.getElementById('language').textContent = countryData.language;
+}
+setInterval(changeCountryInfo, 3000);
+</script>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.flag {
+    width: 200px;
+    height: 150px;
+    background-color: #ccc;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.country-info {
+    flex: 1;
+    text-align: left;
+}
+.country-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.country-info p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.country-info span {
+    font-weight: bold;
+}
+</style>
+    <div class="container">
+        <div class="flag"></div>
+        <div class="country-info">
+            <h2>Country Name</h2>
+            <p>Capital: <span id="capital">Capital</span></p>
+            <p>Population: <span id="population">Population</span></p>
+            <p>Region: <span id="region">Region</span></p>
+            <p>Subregion: <span id="subregion">Subregion</span></p>
+            <p>Language: <span id="language">Language</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+project2:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+.container {
+    width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    text-align: center;
+}
+.form-group {
+    margin-bottom: 10px;
+}
+label {
+    font-weight: bold;
+}
+input, button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+</style>
+    <div class="container">
+        <h2>Form Validation</h2>
+        <form id="validationForm" onsubmit="validateForm(event)">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        <div id="error-message"></div>
+    </div>
+    <script src="project_final.js"></script>
+</body>
+</html>

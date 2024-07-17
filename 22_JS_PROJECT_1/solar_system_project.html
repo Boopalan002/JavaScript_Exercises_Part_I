@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System Weight Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+                            
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('./galaxy.gif'); 
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.calculator {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.calculator h2 {
+    margin-top: 0;
+}
+
+#earth-weight {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+}
+
+#planet-select {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+}
+
+#calculate-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#calculate-btn:hover {
+    background-color: #3e8e41;
+}
+
+#result {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Solar System Weight Calculator</h1>
+    </header>
+    <main>
+        <section class="calculator">
+            <h2>Enter your weight on Earth:</h2>
+            <input type="number" id="earth-weight" value="100">
+            <h2>Select a planet:</h2>
+            <select id="planet-select">
+                <option value="Mercury">Mercury</option>
+                <option value="Venus">Venus</option>
+                <option value="Earth">Earth</option>
+                <option value="Mars">Mars</option>
+                <option value="Jupiter">Jupiter</option>
+                <option value="Saturn">Saturn</option>
+                <option value="Uranus">Uranus</option>
+                <option value="Neptune">Neptune</option>
+            </select>
+            <button id="calculate-btn">Calculate Weight</button>
+            <p id="result"></p>
+        </section>
+    </main>
+    <script src="solar_system_project.js">
+    </script>
+</body>
+</html>
+
+                

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Leaderboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 40px auto;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #f0f0f0;
+}
+#leaderboard-data tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+#leaderboard-data tr:hover {
+    background-color: #ddd;
+}
+input[type="text"], input[type="number"] {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+}
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+</style>
+    <h1>Leaderboard</h1>
+    <table id="leaderboard">
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody id="leaderboard-data">
+            <!-- data will be rendered here -->
+        </tbody>
+    </table>
+    <input type="text" id="name" placeholder="Enter your name">
+    <input type="number" id="score" placeholder="Enter your score">
+    <button id="submit">Submit</button>
+    <script src="leaderboard.html">
+    </script>
+</body>
+</html>
